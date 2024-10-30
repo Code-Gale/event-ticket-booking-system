@@ -48,8 +48,11 @@ Update the .env file with your MongoDB connection details and JWT secret
 API Endpoints
 
 POST /initialize: Initialize a new event with a given number of tickets.
+
 POST /book: Book a ticket for a user. If sold out, add the user to the waiting list.
+
 POST /cancel: Cancel a booking for a user. If there's a waiting list, automatically assign the ticket to the next user in line.
+
 GET /status/:eventId: Retrieve the current status of an event (available tickets, waiting list count).
 
 
